@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*body*/
+
+body {
+    background: #FFF;
+}
+
+
+/*.nav*/
+
+.nav_box {
+    width: 100%;
+    background: #33363B;
+}
+
+.nav {
+    width: 75%;
+    /*box-sizing: border-box;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*list-style: none;*/
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.nav img,
+.nav span {
+    margin: 2% 0;
+    margin: 1.5rem 0;
+}
+
+.nav img {
+    width: 18%;
+    display: inline-block;
+    height: auto;
+}
+
+.nav ul li {
+    display: inline-block;
+    float: left;
+    font-size: 1.2rem;
+    padding: 1.4rem 2rem;
+}
+
+.nav ul li a {
+    color: #FFF;
+}
+
+.nav ul li:hover {
+    background: #1D2025;
+}
+
+.msg {
+    color: #F83A1B;
+}
+
+
+/*.subnav*/
+
+.subnav_box {
+    width: 100%;
+    background: #91C36A;
+}
+
+.subnav {
+    width: 75%;
+    /*box-sizing: border-box;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*list-style: none;*/
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.subnav ul li {
+    display: inline-block;
+    float: left;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.subnav ul li a {
+    color: #FFF;
+}
+
+.subnav ul li:hover {
+    background: #7EA55F;
+}
+
+
+/*.content*/
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.details {
+    width: 100%;
+    background: #F2F3F5;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.line_1 {
+    height: 1px;
+    background: #CACEAD;
+    margin: 1rem 0;
+}
+
+.tv {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 2% 10%;
+}
+
+.list {
+    display: inline-block;
+    width: 45%;
+    line-height: 2.5rem;
+    color: #8A8F85;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    padding-left: 5%
+}
+
+.price_standard,
+.price_platform {
+    color: #F83A1B;
+    font-weight: bold;
+}
+
+
+/*#main*/
+
+#main {
+    width: 100%;
+    height: 21.9rem;
+}
+
+@media screen and (max-width: 960px) {
+    .nav ul li {
+        box-sizing: border-box;
+        width: 50%;
+        text-align: center;
+    }
+    .details {
+        display: block;
+        text-align: center;
+    }
+    .tv {
+        width: 75%;
+    }
+    .list {
+        letter-spacing: 0rem;
+        width: 100%;
+    }
+    .nav img {
+        width: 80%;
+        text-align: center;
+        margin: 2% auto;
+        margin: 1.5rem auto;
+    }
+}

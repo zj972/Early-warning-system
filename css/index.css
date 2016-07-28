@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*body*/
+
+body {
+    background: #ECEDEF;
+}
+
+
+/*#head*/
+
+#head_box {
+    width: 100%;
+    background: #33363b;
+}
+
+#head {
+    width: 75%;
+    /*box-sizing: border-box;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*list-style: none;*/
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+#head img,
+#time {
+    margin: 2% 0;
+    margin: 1.5rem 0;
+}
+
+#head img {
+    width: 18%;
+    display: inline-block;
+    height: auto;
+}
+
+#time {
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#time:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 2.8125rem;
+    left: -2.25rem;
+    background: url(../images/cloud.png) no-repeat;
+}
+
+
+/*#content*/
+
+#content {
+    width: 75%;
+    box-sizing: border-box;
+    margin: 4% auto;
+    border: 1px #e0e0e0 solid;
+    -moz-box-shadow: 0.25rem 0.25rem 0.25rem #a0a0a0;
+    -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #a0a0a0;
+    box-shadow: 0.25rem 0.25rem 0.25rem #a0a0a0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+#name {
+    box-sizing: border-box;
+    padding: 8% 5%;
+    padding: 4rem 2rem;
+    width: 40%;
+}
+
+#form_content {
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 8% 8%;
+}
+
+#form_content input,
+#submit {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+#form_content input {
+    border: 0;
+    color: #787878;
+    -moz-box-shadow: 0.3125rem 0.3125rem 0.3125rem #a0a0a0 inset;
+    -webkit-box-shadow: 0.3125rem 0.3125rem 0.3125rem #a0a0a0 inset;
+    box-shadow: 0.3125rem 0.3125rem 0.3125rem #a0a0a0 inset;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 3rem;
+}
+
+#user {
+    background: url(../images/user.png) 16px center no-repeat #e0e0e0;
+    margin-bottom: 3.125rem;
+}
+
+#password {
+    background: url(../images/lock.png) 16px center no-repeat #e0e0e0;
+}
+
+#form_content p {
+    line-height: 3.6rem;
+    font-size: 1.25rem;
+    color: #FC022B;
+}
+
+#submit {
+    display: block;
+    color: #FFF;
+    background: #91c36a;
+    box-shadow: 0.125rem 0.125rem 0.125rem #a0a0a0;
+}
+
+#password_error {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 960px) {
+    #name {
+        /*box-sizing: border-box;*/
+        padding: 14% 5%;
+        padding: 3.6rem 1.25rem;
+        width: 90%;
+    }
+    #form_content {
+        width: 75%;
+        padding: 2rem 0;
+    }
+    #form_content input,
+    #submit {
+        line-height: 3rem;
+    }
+    #head img {
+        width: 80%;
+        text-align: center;
+        margin: 2% auto;
+        margin: 1.5rem auto;
+    }
+    #time {
+        display: none;
+    }
+}

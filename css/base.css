@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*css初始化*/
+
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+html { height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  -webkit-font-smoothing: antialiased;/*字体抗锯齿*/
+  height: 100%;
+}
+
+img { border: none; }
+
+li { list-style: none; }
+
+input,
+select,
+textarea { outline: none; }
+
+textarea { resize: none; }
+
+a { text-decoration: none; }
+
+/*清除浮动*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
