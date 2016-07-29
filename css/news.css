@@ -1,0 +1,74 @@
+@charset "utf-8";
+body {
+    background: #F2F3F5;
+}
+
+.content {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.list {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    background: #FFF;
+    color: #8A8F85;
+    box-shadow: 2px 2px 2px #B4B4B4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list:hover {
+    background: #DEDEDE;
+    color: #5D5D5D;
+    box-shadow: 2px 2px 2px #858585;
+}
+
+.list_left {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16%;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.list_left img {
+    margin: 1rem auto 0;
+    display: block;
+    width: 34%;
+}
+
+.gradient {
+    height: 3rem;
+    width: 0.25rem;
+    background-image: -moz-linear-gradient(top, #DEDEDE, #898989, #DEDEDE);
+    /* Firefox */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #DEDEDE), color-stop(0.5, #898989), color-stop(1, #DEDEDE));
+    /* Saf4+, Chrome */
+    background-color: #DEDEDE;
+    border-radius: 0.5rem;
+}
+
+.list_right {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 3rem;
+    width: 84%;
+}
+
+.list_right > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list_right > div ul li {
+    float: left;
+    display: inline-block;
+    margin: 0 1.2rem;
+}
+.list_right > div > ul span{
+	color: #F63914;
+}

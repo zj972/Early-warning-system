@@ -143,7 +143,81 @@ body {
     height: 21.9rem;
 }
 
+
+/*.prices_particular*/
+
+.prices_particular {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-height: 20rem;
+    margin: 1rem 0;
+}
+
+.prices_particular > li {
+    margin: 1rem 0;
+    width: 16%;
+    background: #F2F3F5;
+    text-align: center;
+}
+
+.prices_particular p {
+    width: 100%;
+    height: 3rem;
+    background: #33363B;
+}
+
+.name_platform {
+    display: inline-block;
+    background: #91C36A;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    position: relative;
+    top: -25%;
+}
+
+.prices_list {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.prices_list li {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.6rem;
+}
+
+.prices_list li span {
+    color: #A2A3A5;
+}
+
+.prices_list li a {
+    color: #B5d4A0;
+}
+
+.prices_list li {
+    width: 100%;
+}
+
+.prices_list .prices_now span {
+    color: #757679;
+}
+
+.prices_list .prices_now a {
+    color: #91C36A;
+}
+
+.prices_list .prices_error a {
+    color: #F00;
+}
+
 @media screen and (max-width: 960px) {
+    .nav,
+    .nav ul {
+        width: 100%;
+    }
     .nav ul li {
         box-sizing: border-box;
         width: 50%;
@@ -159,11 +233,18 @@ body {
     .list {
         letter-spacing: 0rem;
         width: 100%;
+        padding-left: 0;
     }
     .nav img {
         width: 80%;
         text-align: center;
         margin: 2% auto;
         margin: 1.5rem auto;
+    }
+    .prices_particular {
+        height: 40rem;
+    }
+    .prices_particular > li {
+        width: 45%;
     }
 }
